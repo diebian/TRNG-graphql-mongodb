@@ -1,0 +1,23 @@
+{
+  "name": "graphql-mongodb",
+  "version": "1.0.0",
+  "description": "training mongodb, graphql, nodejs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node src/index.js"
+  },
+  "author": "Diego Mamani Zanca",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^2.9.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.3",
+    "graphql-tools": "^4.0.5",
+    "mongoose": "^5.6.11"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
+}
