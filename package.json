@@ -9,7 +9,7 @@
   "author": "Diego Mamani Zanca",
   "license": "MIT",
   "dependencies": {
-    "apollo-server-express": "^2.9.0",
+    "apollo-server-express": "^1.3.2",
     "express": "^4.17.1",
     "graphql": "^14.5.3",
     "graphql-tools": "^4.0.5",

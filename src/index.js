@@ -18,23 +18,26 @@ import resolvers from './resolvers';
 // settings
 app.set('port', process.env.PORT || 7000);
 
-const schemaEX = makeExecutableSchema({
+const schema = makeExecutableSchema({
     typeDefs, 
     resolvers
 });
 
 // routes
 app.use('/graphql', express.json(), graphqlExpress({
-    schema: schemaEX,
-    /* context: {
+    schema,
+    context: {
         Dev
-    } */
+    }
 }));
 
-app.use('graphiql', graphiqlExpress({
+app.use('/graphiql', graphiqlExpress({
     endpointURL: 'graphql'
 }));
 
+app.get('/test', (req, res) => {
+    res.send({ hello: 'world' });
+});
 
 app.listen(app.get('port'), () => {
     console.log('Server on port 7000');

@@ -2,7 +2,8 @@ export default `
 
     type Dev {
         _id: String!
-        name: String 
+        name: String
+        skills: String
     }
 
     type Query {
@@ -10,7 +11,7 @@ export default `
     }
 
     type Mutation {
-        createDev(name: String!): Dev!
+        createDev(name: String!  skills: String!): Dev!
     }
 
 `;
